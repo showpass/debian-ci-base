@@ -1,6 +1,6 @@
 FROM showpass/debian
 
-RUN apt update && apt -y upgrade
-RUN apt install -y nodejs npm
+RUN apt-get update && apt-get -y upgrade
+RUN apt-get install -y nodejs npm
 RUN npm install -g gulp && npm install -g bower
-RUN apt install -y phantomjs firefox-esr xvfb dbus
+RUN apt-get install -y phantomjs firefox-esr xvfb dbus
