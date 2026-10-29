@@ -1,4 +1,4 @@
-FROM showpass/debian-slim-bookworm:with-python-3.12.10
+FROM showpass/debian-slim-bookworm:with-python-3.12.16
 
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get install -y nodejs npm
